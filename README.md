@@ -7,6 +7,7 @@ adding the map element                          https://youtu.be/5UlJ7Eic44M
 getting the API key                             https://youtu.be/5vATo6DcerA
 referencing the js files                        https://youtu.be/UVPq2Agf6rk
 rendering the map                               https://youtu.be/9W9LfznPMfQ
+adding markers                                  https://youtu.be/SlRaPAWbPBU
 
 
 
