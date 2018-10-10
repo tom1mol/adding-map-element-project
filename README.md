@@ -18,6 +18,8 @@ github form                                     https://youtu.be/M_WahXaO6ec
 initial data retrieval setup                    https://youtu.be/vT_xDMlP1LA
 making promises                                 https://youtu.be/mR0eu2zF0KI
 rendering user data                             https://youtu.be/2dfYlpQLgXs
+getting the repo data                           https://youtu.be/g7fhFS1pGoI
+rendering repo data                             https://youtu.be/B0SiD6AGTWQ
 
 
 

@@ -18,6 +18,27 @@ function userInformationHTML(user) {    //return html code we use to render the 
                                                             
 }
 
+function repoInformationHTML(repos) {                    //function to render repo info(html)
+  if (repos.length == 0) {
+      return `<div class="clearfix repo-list">No repos!</div>`;
+  } 
+  
+  var listItemsHTML = repos.map(function(repo) {        //map each repo to a list element. rtn <li>
+      return `<li>
+                  <a href="${repo.html_url}" target="_blank">${repo.name}</a> <!--url to repo that opens in new page. txt will be name of repo-->
+              </li>`;
+  });
+  
+  return `<div class="clearfix repo-list"> 
+                <p>
+                    <strong>Repo List:</strong>
+                </p>
+                <ul>
+                    ${listItemsHTML.join("\n")}      <!--inject in listitems. join elements together.use new line to seperate them -->
+                </ul>
+          </div>`;
+}     
+
 function fetchGitHubInformation(event) {            
     
     var username = $("#gh-username").val();             
@@ -32,11 +53,14 @@ function fetchGitHubInformation(event) {
         </div>`);
         
     $.when(
-        $.getJSON(`https://api.github.com/users/${username}`)
+        $.getJSON(`https://api.github.com/users/${username}`),
+        $.getJSON(`https://api.github.com/users/${username}/repos`)
         ).then(
-            function(response) {
-                var userData = response;
+            function(firstResponse, secondResponse) {
+                var userData = firstResponse[0];
+                var repoData = secondResponse[0];
                 $("#gh-user-data").html(userInformationHTML(userData)); //write userData to gh-user-data
+                $("#gh-repo-data").html(repoInformationHTML(repoData));
             }, function(errorResponse) {
                 if (errorResponse.status === 404) {
                     $("#gh-user-data").html(        //write html to gh-user-data
