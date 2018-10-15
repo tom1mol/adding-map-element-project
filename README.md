@@ -25,6 +25,10 @@ lets fix some bugs                              https://youtu.be/-k_3CMSchhc
 signing up to emailJS                               https://youtu.be/bDbIH9JqlWI
 creating an email template                          https://youtu.be/a-paDkk14zs
 Connecting 2 The EmailJS Service Using Their SDK    https://youtu.be/eXpi1_Kx10Q
+Creating Email Template Parameters                  https://youtu.be/cSoAknHvajE
+Preparing The Contact.Html File                     https://youtu.be/1gE333q4diw
+sending emails                                      https://youtu.be/wQmXJXEN6NY
+
 
 
 
