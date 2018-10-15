@@ -20,6 +20,11 @@ making promises                                 https://youtu.be/mR0eu2zF0KI
 rendering user data                             https://youtu.be/2dfYlpQLgXs
 getting the repo data                           https://youtu.be/g7fhFS1pGoI
 rendering repo data                             https://youtu.be/B0SiD6AGTWQ
+lets fix some bugs                              https://youtu.be/-k_3CMSchhc
+
+signing up to emailJS                               https://youtu.be/bDbIH9JqlWI
+creating an email template                          https://youtu.be/a-paDkk14zs
+Connecting 2 The EmailJS Service Using Their SDK    https://youtu.be/eXpi1_Kx10Q
 
 
 
